@@ -1,0 +1,28 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let cartItem of cart.items">
+    <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
+    <div class="foodNames">
+      <a routerLink= "/foodpage/{{cartItem.food.id}}">
+        {{cartItem.food.name}}
+      </a>
+    </div>
+    <div class="foodPrice">
+      {{cartItem.price | currency}}
+    </div>
+
+    <div class="qtnFood">
+      <span>Quantidade  {{cartItem.quantity}} </span>
+    </div>
+
+    <div class="btn-remove">
+      <button class="btn-removeFromCart" (click)="removeFromCart(cartItem)"><mat-icon>remove_shopping_cart</mat-icon>Remover</button>
+    </div>
+    
+  </li>
+</ul>
+<div class="checkout">
+  <div>
+    <div class="food-count">Items no Carrinho: {{cart.items.length}}</div>
+    <div class="total-price">Valor Total: {{cart.totalPrice | currency}}</div>
+  </div>
+</div>

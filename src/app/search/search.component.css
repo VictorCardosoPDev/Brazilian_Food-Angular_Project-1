@@ -1,0 +1,35 @@
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+input {
+
+    border-radius: 10rem 0rem 0rem 10rem;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color: whitesmoke;
+    padding: 1.2rem;
+    font-size: 1rem;
+    outline: none;
+    
+}
+
+button {
+
+    background-color: #FC0404;
+    border-radius: 0rem 2rem 2rem 0rem;
+    color: whitesmoke;
+    border: none;
+    
+    
+}
+
+button:hover {
+
+    cursor: pointer;
+    opacity: .6;
+}

@@ -1,0 +1,55 @@
+li {
+    padding-left: 1rem;
+}
+
+img{
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.btn-removeFromCart, mat-icon {
+    display: inline-flex;
+    align-items:center;
+    color: white;
+    background-color: red;
+    border-radius: 1rem;
+    border: none;
+    padding: .2rem;    
+}
+.btn-removeFromCart:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-removeFromCart:hover mat-icon {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.foodNames {
+    text-align: center;
+    display: inline-table;
+    padding: .3rem;
+    padding-left: 2rem;
+}
+
+.foodPrice {
+    display: inline-table;
+    padding: .3rem;
+    padding: 2rem;
+}
+
+.btn-remove {
+    display: inline-table;
+    padding: 2rem;
+}
+
+.checkout{
+    display: inline-block;
+    padding-left: 4rem;
+}
+.qtnFood{
+    display: inline-block;
+    align-items: center;
+    padding: 2rem;
+}

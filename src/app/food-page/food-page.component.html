@@ -1,0 +1,46 @@
+
+    <div class="container">
+        <img [src]="food.imageUrl" [alt]="food.name">
+
+        <div class="details">
+            <div class="header">
+                <span class="name">
+                    {{food.name}}
+                </span>
+            </div>
+            <div class="origins">
+                <span *ngFor="let origin of food.origins">
+                    {{origin}}
+                </span>
+            </div>
+            <div class="info">
+                <span *ngFor="let info of food.information">
+                    {{info}}
+                </span>
+            </div>
+            
+        
+            <div class="clock-time">
+                <span class="cooktime">
+                    🕑 <strong>{{food.cookTime}}</strong> min
+                </span>
+            </div>
+        
+            <div class="price">
+                Valor: R$ {{food.price}}
+            </div>
+            
+            <app-star-rating></app-star-rating>
+        </div>
+    </div>
+    
+    
+    <button type="button" class="btn btn-danger" (click)="addToCart()"><mat-icon>add_shopping_cart</mat-icon>Adicionar ao carrinho</button>
+
+    
+      
+    <div class="btnQuantidade">
+        <button class="decrementBtn" (click)="decrementQuantity()">-</button>
+        <span class="quantidade">{{ selectedQuantity }}</span>
+        <button class="incrementBtn" (click)="incrementQuantity()">+</button>
+      </div>

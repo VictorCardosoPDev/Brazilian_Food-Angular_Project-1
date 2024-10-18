@@ -1,0 +1,45 @@
+header {
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid #FC0404;
+    
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+a { 
+    align-content: center;
+    color: #FC0404;
+    text-decoration: none;   
+}
+
+a:hover {
+    background: #FC0404;
+    color: white;
+}
+a.mat-icon{
+    align-items: baseline;
+}
+
+a.logo {
+    font-weight: bold;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a {
+    padding: 1.1rem; 
+}
+.cart{
+    align-items: center;
+}
+mat-icon{
+   position: relative;
+   top: .3rem; 
+}

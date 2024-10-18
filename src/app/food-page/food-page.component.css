@@ -1,0 +1,123 @@
+.container{
+    position: relative;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem; 
+    font-size: 2rem;
+}
+.name{
+    position: fixed;
+    top:5rem;
+    font-size: 2.5rem;
+}
+.details{
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: -3px;
+    margin-left: 2rem;
+    top:-2rem
+     
+}
+
+.container >*{
+    min-width: 25rem;
+    max-width: 40rem; 
+}
+
+img{
+    
+    border-radius: 2rem;
+    height: 30rem;
+    margin: 1rem;
+}
+
+.carrinho{
+    display: flex;
+    position: relative;
+    bottom: 7rem;
+    left: 52rem;
+    align-items: center;
+    padding: .5rem;
+    
+}
+.details .header{
+    display:flex;
+    justify-content: space-between; 
+}
+
+.btn-danger{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top:-8rem;
+    left: 52rem;
+    background-color: #FC0404;
+    
+}
+
+.btn-danger:hover {
+    background-color: rgb(255, 255, 255);
+    color: #FC0404;
+}
+.opcoes{
+    display: flex;
+    position: relative;
+    text-align: center;
+    bottom: 7rem;
+    left: 62.5rem;
+    margin-bottom: 1rem;
+}
+
+icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon-sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+.btnQuantidade{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 57rem;
+    top: -6rem;
+    cursor: pointer;
+}
+
+.quantidade{
+    padding: 0 1rem;
+}
+
+.decrementBtn{
+    border-radius: 50%;               
+    height: 30px; 
+    padding: 2px 12px;
+    border: none;
+    color: white;
+    background-color: #FC0404;
+    opacity: 0.9;
+}
+
+.incrementBtn{
+    border-radius: 50%;               
+    height: 30px; 
+    padding: 1px 10px;
+    border: none;
+    color: white;
+    background-color: #FC0404;
+    opacity: 0.9;
+}
+
+.decrementBtn:hover, .incrementBtn:hover {
+    color: #FC0404;
+    background-color: whitesmoke;
+}
